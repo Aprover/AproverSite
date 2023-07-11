@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width,minimum-scale=1" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script defer="defer" src="js/217.js"></script>
+        <script defer="defer" src="js/577.js"></script>
+        <script defer="defer" src="js/906.js"></script>
+        <script defer="defer" src="js/messageBuilder.js"></script>
+        <link href="css/217.css" rel="stylesheet">
+        <link href="css/messageBuilder.css" rel="stylesheet">
+    </head>
+
+    <body id="container">
+        <div class="modal" id="modal-receiver" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Message Receiver</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row no-gutters">
+                            <div class="col-sm">Sender:</div>
+                            <div class="col-sm">Alice</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">Receiver:</div>
+                            <div class="col-sm"><select name="receiver" id="receiver">
+                                    <option value="Alice">Alice</option>
+                                    <option value="Bob" selected="selected">Bob</option>
+                                    <option value="Server">Server</option>
+                                </select></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button type="button" id="next" class="btn btn-primary" data-dismiss="modal">Next</button></div>
+                </div>
+            </div>
+        </div>
+        <div id="toolbar" class="navbar-default"></div>
+        <div id="submit"></div>
+        <div id="side-nav">
+            <div id="layer_elements"></div><button type="button" class="collapsible_security collapsible">Security Concepts</button>
+            <div class="content">
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="asymmetricEncryption" class="palette_node_element_asym draw2d_droppable" title="drag&amp;drop the table into the canvas..">Asymmetric Encryption</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="symmetricEncryption" class="palette_node_element_sym draw2d_droppable" title="drag&amp;drop the table into the canvas..">Symmetric Encryption</div>
+                </div>
+                <div id="layer_elements"></div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="signature" class="palette_node_element_sign draw2d_droppable" title="drag&amp;drop the table into the canvas..">signature</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="mac" class="palette_node_element_mac draw2d_droppable" title="drag&amp;drop the table into the canvas..">mac</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="hash" class="palette_node_element_hash draw2d_droppable" title="drag&amp;drop the table into the canvas..">hash</div>
+                </div>
+            </div><button type="button" class="collapsible_message collapsible">Message Utilities</button>
+            <div class="content">
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="Message" class="palette_node_element_message draw2d_droppable" title="drag&amp;drop the table into the canvas..">Message</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="Group" class="palette_node_element_group draw2d_droppable" title="drag&amp;drop the table into the canvas..">Group</div>
+                </div>
+            </div><button type="button" class="collapsible_knowledge collapsible">Knowledge</button>
+            <div class="content">
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="nonce" class="palette_node_element_nonce draw2d_droppable" title="drag&amp;drop the table into the canvas..">nonce</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="idCertificate" class="palette_node_element_idcert draw2d_droppable" title="drag&amp;drop the table into the canvas..">Identity Certificate</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="bitstring" class="palette_node_element_bitstring draw2d_droppable" title="drag&amp;drop the table into the canvas..">Bitstring</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="timestamp" class="palette_node_element_timestamp draw2d_droppable" title="drag&amp;drop the table into the canvas..">timestamp</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="symmetricKey" class="palette_node_element_symkey draw2d_droppable" title="drag&amp;drop the table into the canvas..">Symmetric Key</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="asymmetricPublicKey" class="palette_node_element_asympubkey draw2d_droppable" title="drag&amp;drop the table into the canvas..">Asymmetric Public Key</div>
+                </div>
+                <div id="layer_header" class="highlight panetitle blackgradient">
+                    <div data-shape="asymmetricPrivateKey" class="palette_node_element_asymprivkey draw2d_droppable" title="drag&amp;drop the table into the canvas..">Asymmetric Private Key</div>
+                </div>
+            </div>
+        </div>
+        <div id="canvas"></div>
+    </body>
+
+</html>
