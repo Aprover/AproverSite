@@ -1,0 +1,62 @@
+{
+  "messageId": 4,
+  "sender": "Alice",
+  "receiver": "Bob",
+  "messageName": "Message Name",
+  "messageFields": [
+    {
+      "id": "0",
+      "securityConcept": "asymmetricEncryption",
+      "algorithm": "RSA",
+      "argument": {
+        "referenceId": "1"
+      },
+      "encryptionKey": {
+        "asymmetricPublicKey": "Key 1"
+      }
+    },
+    {
+      "id": "1",
+      "knowledgeGroup": [
+        {
+          "nonce": "this.nonce[i]"
+        },
+        {
+          "idCertificate": "ID 1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "knowledgeGroup": [
+        {
+          "timestamp": "TimeS 1"
+        },
+        {
+          "referenceId": "3"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "securityConcept": "symmetricEncryption",
+      "algorithm": "AES",
+      "argument": {
+        "bitstring": "String 1"
+      },
+      "encryptionKey": {
+        "symmetricKey": "Key 1"
+      }
+    },
+    {
+      "message": [
+        {
+          "referenceId": "0"
+        },
+        {
+          "referenceId": "2"
+        }
+      ]
+    }
+  ]
+}

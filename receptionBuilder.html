@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title></title>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="./node_modules/jquery/dist/jquery.js"></script>
+        <script src="./node_modules/jquery-ui-bundle/jquery-ui.js"></script>
+        <script src="./node_modules/draw2d_aprover/dist/draw2d.js"></script>
+    </head>
+
+    <body id="container">
+        <div class="modal" id="modal-receiver" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Message Receiver</h5>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row no-gutters">
+                            <div class="col-sm">
+                                Sender:
+                            </div>
+                            <div class="col-sm">
+                                Alice
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm">
+                                Receiver:
+                            </div>
+                            <div class="col-sm">
+                                <select name="receiver" id="receiver">
+                                    <option value="Alice">Alice</option>
+                                    <option value="Bob" selected>Bob</option>
+                                    <option value="Server">Server</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="next" class="btn btn-primary" data-dismiss="modal">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="toolbar" class="navbar-default"></div>
+        <div id="submit"></div>
+
+        <div id="canvas" style="left: 0px;">
+        </div>
+
+    </body>
+
+</html>

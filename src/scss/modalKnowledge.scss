@@ -1,0 +1,18 @@
+@import "variables";
+@import "bootstrap";
+@import "fonts";
+
+.header_color{
+    background-color: var(--bs-dark);
+  }
+ 
+ .modal-title{
+     color: white;
+     font-weight: bold;
+  } 
+
+.modal_label_text{
+    font-size: large;
+    font-weight: bold;
+}
+

@@ -1,0 +1,34 @@
+{
+    "nonce": [],
+    "idCertificate": [],
+    "timestamp": [],
+    "bitstring": [],
+    "symmetricKey": [
+        {
+            "id": "",
+            "knownBy": [
+                "Alice",
+                "Bob"
+            ],
+            "value": ""
+        }
+    ],
+    "asymmetricPrivateKey": [
+        {
+            "id": "",
+            "knownBy": [
+                "Alice",
+                "Bob"
+            ],
+            "value": "",
+            "derivedPublicKey": {
+                "id": "",
+                "knownBy": [
+                    "Alice",
+                    "Bob"
+                ],
+                "value": ""
+            }
+        }
+    ]
+}
